@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/box_fragment"
+    >
+
+    <Button
+        android:id="@+id/box_verpaquetes"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:text="See packages"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecundary"
+        android:background="@drawable/box_verpack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/box_comprarpaquetes"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:background="@drawable/box_comprarpack"
+        android:text="Buy packages"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imgAddshopping"
+        android:layout_width="144dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_comprarpaquetes"
+        app:layout_constraintEnd_toEndOf="@+id/box_comprarpaquetes"
+        app:layout_constraintStart_toStartOf="@+id/box_comprarpaquetes"
+        app:layout_constraintTop_toTopOf="@+id/box_comprarpaquetes"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_add_shopping" />
+<!--
+    <ImageView
+        android:id="@+id/imgVisibility"
+        android:layout_width="144dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_verpaquetes"
+        app:layout_constraintEnd_toEndOf="@+id/box_verpaquetes"
+        app:layout_constraintStart_toStartOf="@+id/box_verpaquetes"
+        app:layout_constraintTop_toTopOf="@+id/box_verpaquetes"
+        app:srcCompat="@drawable/ic_visibility_black" />
+
+       -->
+</androidx.constraintlayout.widget.ConstraintLayout>

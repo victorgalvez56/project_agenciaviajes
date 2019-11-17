@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/box_fragment"
+    >
+
+
+    <TextView
+        android:id="@+id/txtPersonalInformation"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/box_bottomsecundary"
+        android:text="Personal Information"
+        android:gravity="center"
+        android:textColor="@color/colorTextDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/txtNames"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="372dp"
+        android:background="@drawable/box_perfil"
+        android:text="Names: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/outNames"
+        android:layout_width="182dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:gravity="center"
+        android:text="Nombres"
+        android:textColor="@color/colorTextLite"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNames"
+        app:layout_constraintEnd_toEndOf="@+id/txtNames"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtNames"
+        app:layout_constraintTop_toTopOf="@+id/txtNames"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:text="Email: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNames"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/outEmail"
+        android:layout_width="182dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/box_perfil"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="@color/colorTextLite"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toTopOf="@+id/txtEmail"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/txtDni"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:text="Dni: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/outDni"
+        android:layout_width="182dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:gravity="center"
+        android:text="Dni"
+        android:textColor="@color/colorTextLite"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDni"
+        app:layout_constraintEnd_toEndOf="@+id/txtDni"
+        app:layout_constraintStart_toStartOf="@+id/txtDni"
+        app:layout_constraintTop_toTopOf="@+id/txtDni" />
+
+
+    <TextView
+        android:id="@+id/txtTelef"
+        android:layout_width="297dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:text="Teléfono: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDni"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/outTelef"
+        android:layout_width="182dp"
+        android:layout_height="29dp"
+        android:background="@drawable/box_perfil"
+        android:gravity="center"
+        android:text="Teléfono"
+        android:textColor="@color/colorTextLite"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTelef"
+        app:layout_constraintEnd_toEndOf="@+id/txtTelef"
+        app:layout_constraintStart_toStartOf="@+id/txtTelef"
+        app:layout_constraintTop_toTopOf="@+id/txtTelef" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_bottomsecundary"
+        android:text="Modificar"
+        android:textColor="@color/colorTextDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelef"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <ImageView
+        android:id="@+id/img_perfil"
+        android:layout_width="138dp"
+        android:layout_height="151dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
